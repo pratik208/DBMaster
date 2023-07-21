@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SplashScreenActivity">
+    <TextView
+        android:textColor="@color/black"
+        android:layout_marginTop="50dp"
+        android:id="@+id/titleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#D8C2C2"
+        android:backgroundTint="#D1B4B4"
+        android:drawableTint="#554141"
+        android:fontFamily="sans-serif-condensed-light"
+        android:fontFeatureSettings="@string/bottom_sheet_behavior"
+        android:gravity="center"
+        android:text="DATABASE NORMALIZATION"
+        android:textSize="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="77dp" />
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_marginTop="50dp"
+        android:id="@+id/animation_view"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/ss"
+        tools:layout_editor_absoluteY="215dp" />
+
+    <TextView
+        android:layout_marginTop="50dp"
+        android:textColor="@color/black"
+        android:id="@+id/creatorTextView"
+        android:layout_width="423dp"
+        android:layout_height="99dp"
+        android:background="#737070"
+        android:backgroundTint="#C1BEBE"
+        android:drawableTint="#554141"
+        android:fontFamily="monospace"
+        android:fontFeatureSettings="@string/bottom_sheet_behavior"
+        android:gravity="center"
+        android:text="Created by -\nPratik Patil"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="594dp" />
+</LinearLayout>

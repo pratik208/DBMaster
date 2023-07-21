@@ -1,0 +1,111 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:textStyle="bold"
+        android:background="#A5A5A5"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="Dont Use comma between the dependency"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:textSize="20sp"
+        />
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:text="Enter left side"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:textSize="20sp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:layout_marginTop="15dp"
+            android:id="@+id/editTextLeftAttribute"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter left attribute" />
+
+        <LinearLayout
+
+            android:id="@+id/layoutAttributes"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:text="Enter right side"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:textSize="20sp"
+            />
+
+        <EditText
+            android:layout_marginTop="10dp"
+            android:id="@+id/editTextRightAttribute"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter right attribute" />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_gravity="center"
+        android:id="@+id/buttonAddAttributes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Attributes"
+        android:onClick="onAddAttributesClicked" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+
+            android:id="@+id/layoutAttributes"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+    </ScrollView>
+
+    <Button
+        android:layout_gravity="center"
+        android:id="@+id/buttonFindClosure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Find Closure"
+        android:onClick="onFindClosureClicked" />
+
+    <TextView
+        android:textSize="20sp"
+        android:id="@+id/textViewClosureResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp" />
+
+
+    <TextView
+        android:textSize="20sp"
+        android:id="@+id/textViewClosureResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>

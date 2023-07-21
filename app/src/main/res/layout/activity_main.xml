@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <!-- LottieAnimationView as the background -->
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:lottie_autoPlay="true"
+
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/main" />
+
+    <!-- Buttons placed above the animation view -->
+    <Button
+
+        android:id="@+id/buttonFindClosure"
+        android:layout_width="350dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:textSize="35sp"
+        android:alpha="0.7"
+        android:onClick="onFindClosureClicked"
+        android:text="Find Closure" />
+
+    <Button
+        android:id="@+id/buttonFindCandidateKey"
+        android:layout_width="350dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/buttonFindClosure"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:alpha="0.7"
+        android:onClick="onFindCandidateKeyClicked"
+        android:padding="15dp"
+        android:text="Find Candidate Key"
+        android:textSize="35sp" />
+
+    <Button
+        android:id="@+id/buttonNormalization"
+        android:layout_width="350dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/buttonFindCandidateKey"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:alpha="0.7"
+        android:onClick="onNormalizationClicked"
+        android:text="Normalization"
+        android:textSize="35sp" />
+
+</RelativeLayout>
